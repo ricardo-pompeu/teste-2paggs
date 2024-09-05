@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Itens - VARASTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>VARASTO - Controle de Estoque</h1>
+    <h2>Cadastro de Itens</h2>
+    <form id="itemForm">
+      <label for="itemName">Nome do Item:</label>
+      <input type="text" id="itemName" required>
+      
+      <label for="itemQuantity">Quantidade:</label>
+      <input type="number" id="itemQuantity" required>
+      
+      <label for="itemPrice">Preço:</label>
+      <input type="number" id="itemPrice" required>
+      
+      <label for="itemPriority">Prioridade:</label>
+      <select id="itemPriority">
+        <option value="Alta">Alta</option>
+        <option value="Média">Média</option>
+        <option value="Baixa">Baixa</option>
+      </select>
+      
+      <label for="itemValidity">Validade:</label>
+      <input type="date" id="itemValidity" required>
+      
+      <button type="submit">Cadastrar Item</button>
+    </form>
+
+    <a href="itens/itens.html" class="button">Ver Itens Cadastrados</a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
